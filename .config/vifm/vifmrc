@@ -1,0 +1,11 @@
+" Editor to neovim
+set vicmd=nvim
+" Colorscheme
+colorscheme wrt 
+" View pane
+view
+" Normal mode commands
+:normal zo <c-c>
+
+only
+source /home/will/.config/vifm/favicons.vifm
