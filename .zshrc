@@ -102,6 +102,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias n="neofetch"
+alias nn="chafa -s 25x25 /home/will/Pictures/freebsd.svg"
+alias rw="doas chmod 777"
 alias z="zathura"
 alias wi="doas wpa_cli"
 alias wifi="doas wpa_cli"
