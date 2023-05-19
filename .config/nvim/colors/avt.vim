@@ -3,7 +3,7 @@ syntax reset
 let g:colors_name = "avt"
 set background=dark
 set t_Co=256
-hi Normal guifg=#ffffff ctermbg=NONE guibg=#000000 gui=NONE
+hi Normal guifg=#ffffff ctermbg=NONE guibg=NONE gui=NONE
 
 hi DiffText guifg=#eb0028 guibg=NONE
 hi ErrorMsg guifg=#eb0028 guibg=NONE
@@ -62,8 +62,8 @@ hi cssAttr guifg=#fef67a guibg=NONE
 hi Pmenu guifg=#ffffff guibg=#454545
 hi SignColumn guibg=#000000
 hi Title guifg=#ffffff
-hi LineNr guifg=#999999 guibg=#000000
-hi NonText guifg=#333333 guibg=#000000
+hi LineNr guifg=#999999 guibg=NONE
+hi NonText guifg=#333333 guibg=NONE
 hi Comment guifg=#333333 gui=italic
 hi SpecialComment guifg=#333333 gui=italic guibg=NONE
 hi CursorLine guibg=#454545
