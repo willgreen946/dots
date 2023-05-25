@@ -1,5 +1,8 @@
 export PS1="\[\e[31m\][\[\e[m\]\[\e[33m\]\u\[\e[m\]\[\e[32m\]@\[\e[m\]\[\e[34m\]\h\[\e[m\] \[\e[32m\]\w\[\e[m\]\[\e[31m\]]\[\e[m\]\\$ "
 
+NWK="null"
+NWK_PSK="null"
+
 alias n="neofetch"
 alias nn="chafa -s 25x25 /home/will/Pictures/genbsd.png"
 alias rw="doas chmod 777"
@@ -8,7 +11,7 @@ alias z="zathura"
 alias wi="doas wpa_cli"
 alias core="doas sysctl hw.smt=1"
 alias wifi-start="doas dhclient iwm0"
-alias wifi="doas ifconfig iwm0 nwid \"BT-J5A85S\" wpakey \"c7G7dbLQK7APhE\""
+alias wifi="doas ifconfig iwm0 nwid \"$NWK\" wpakey \"$NWK_PSK\""
 alias dich="doas smartctl -a"
 alias fi="doas pkg install"
 alias fr="doas pkg remove"
