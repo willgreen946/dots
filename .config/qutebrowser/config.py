@@ -10,5 +10,8 @@ c.fonts.prompts = '10pt "ubuntu mono"'
 c.fonts.statusbar = '10pt "ubuntu mono"'
 
 # binds
-config.bind('P', 'hint links spawn mpv {hint-url}')
-
+config.bind('p', 'hint links spawn mpv {hint-url}')
+config.bind('d', 'hint links download')
+config.bind('q', 'tab-close')
+config.bind('h', 'tab-next')
+config.bind('l', 'tab-next')
