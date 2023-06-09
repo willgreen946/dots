@@ -11,9 +11,9 @@ c.fonts.statusbar = '10pt "ubuntu mono"'
 
 # binds
 config.bind('p', 'hint links spawn mpv {hint-url}')
-config.bind('d', 'hint links download')
-config.bind('q', 'tab-close')
-config.bind('H', 'tab-prev')
-config.bind('L', 'tab-next')
-config.bind('n', 'forward')
-config.bind('b', 'back')
+config.bind('M', 'hint links download')
+config.bind('d', 'tab-close')
+config.bind('J', 'tab-prev')
+config.bind('K', 'tab-next')
+config.bind('L', 'forward')
+config.bind('H', 'back')
