@@ -2,12 +2,12 @@ set bg=dark
 syntax on
 set t_Co=256
 colorscheme avt
-"autocmd VimEnter * hi Normal ctermbg=none
 set number
 set cursorline!
 hi CursorColumn cterm=NONE ctermbg=240
 hi Directory ctermfg=green
 
+" Gets colorscheme to work
 if has("termguicolors")
   set termguicolors
   if &t_8f == ''
@@ -17,17 +17,14 @@ if has("termguicolors")
   endif
 endif
 
-"let g:airline_theme='silver'
+let g:airline_theme='supernova'
 
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 
 nnoremap <C-e> <End> 
 inoremap <C-e> <End>
 
 " Nerdtree
-"autocmd VimEnter * NERDTree
-map <C-n> :NERDTreeToggle <CR>
-map <C-j> :NERDTreeOpen<CR>
 nnoremap <C-f> :NERDTreeToggle<Enter>
 
 map <C-a> :set cursorline! <CR> 
