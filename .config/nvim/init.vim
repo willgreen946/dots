@@ -20,6 +20,11 @@ endif
 let g:airline_theme='supernova'
 
 let g:airline#extensions#tabline#enabled = 1
+
+nnoremap <C-n> :bnext<Enter>
+inoremap <C-n> :bnext<Enter>
+nnoremap <C-b> :bprevious<Enter>
+
 nnoremap <C-h> <Home>
 inoremap <C-h> <Home>
 nnoremap <C-e> <End> 
