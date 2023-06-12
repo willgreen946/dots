@@ -1,26 +1,27 @@
-#!/bin/bash
-INTERFACE="iwm0"
-ROOT="doas"
+while getopts o:i: flag
+do
+	case "${flag}" in
+		o) os=${OPTARG};;
+		i) interface=${OPTARG};;
+		*) exit;
+	esac
+done
 
-printf "Scan? [y/N]: "
-read BOOL
-if [ $BOOL == 'Y' ] || [ $BOOL == 'y' ]
+echo "OS = $os";
+echo "Interface = $interface";
+echo "Is this correct? [y/N] ";
+read input;
+
+case $input in
+	y|Y) echo "";;
+	n|N) exit;;
+	*) exit;;
+esac
+
+if [ $os == 'linux' ]
 then
-	printf "Scanning Networks ... "
-	exec ifconfig $INTERFACE scan &
-	printf "3 ..."
-	sleep 1
-	printf "2 ..."
-	sleep 1
-	printf "1 ..."
-	sleep 1
-	printf " Scan Complete" 
+	exec doas wpa_supplicant -i $interface -D wext -c/etc/wpa_supplicant/wpa_supplicant.conf -B
+elif [ $os = 'openbsd' ]
+then
+	exec doas ifconfig 
 fi
-
-printf "\nWifi Name: "
-read WIFI 
-
-printf "Password: "
-read PSK 
-
-exec $ROOT ifconfig $INTERFACE nwid "$WIFI" wpakey "$PSK" 
