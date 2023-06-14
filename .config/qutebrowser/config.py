@@ -3,11 +3,11 @@ config.load_autoconfig(False)
 #config.set("colors.webpage.darkmode.enabled", True)
 
 #fonts
-c.fonts.tabs.selected = '10pt "ubuntu mono"'
-c.fonts.tabs.unselected = '10pt "ubuntu mono"'
-c.fonts.debug_console = '10pt "ubuntu mono"'
-c.fonts.prompts = '10pt "ubuntu mono"'
-c.fonts.statusbar = '10pt "ubuntu mono"'
+c.fonts.tabs.selected = '10pt "terminus"'
+c.fonts.tabs.unselected = '10pt "terminus"'
+c.fonts.debug_console = '10pt "terminus"'
+c.fonts.prompts = '10pt "terminus"'
+c.fonts.statusbar = '10pt "terminus"'
 
 # binds
 config.bind('p', 'hint links spawn mpv {hint-url}')
