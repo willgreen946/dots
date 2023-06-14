@@ -7,5 +7,5 @@ view
 " Normal mode commands
 :normal zo <c-c>
 
+filextype *.pdf mupdf %f
 only
-source /home/will/.config/vifm/favicons.vifm
