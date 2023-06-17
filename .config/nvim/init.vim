@@ -21,9 +21,16 @@ let g:airline_theme='supernova'
 
 let g:airline#extensions#tabline#enabled = 1
 
-nnoremap <C-n> :bnext<Enter>
-inoremap <C-n> :bnext<Enter>
+nnoremap <C-n> :set number !<Enter>
+nnoremap <C-s> :filetype detect<Enter>
+
+nnoremap <C-t> :terminal<Enter>
+tnoremap <esc> <C-\><C-n>
+tnoremap <C-c> <C-\><C-n>
+
+nnoremap <C-f> :bnext<Enter>
 nnoremap <C-b> :bprevious<Enter>
+nnoremap <C-g> :bd<Enter>
 
 nnoremap <C-h> <Home>
 inoremap <C-h> <Home>
@@ -31,9 +38,9 @@ nnoremap <C-e> <End>
 inoremap <C-e> <End>
 
 " Nerdtree
-nnoremap <C-f> :NERDTreeToggle<Enter>
+nnoremap <C-space> :NERDTreeToggle<Enter>
 
-map <C-a> :set cursorline! <CR> 
+map <C-l> :set cursorline! <Enter> 
 
 " Disabling arrow keys
 cnoremap <Down> <Nop>
