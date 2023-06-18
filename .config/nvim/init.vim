@@ -26,10 +26,10 @@ nnoremap <C-s> :filetype detect<Enter>
 
 nnoremap <C-t> :terminal<Enter>
 tnoremap <esc> <C-\><C-n>
-tnoremap <C-c> <C-\><C-n>
+tnoremap <C-v> <C-\><C-n>
 
-nnoremap <C-f> :bnext<Enter>
-nnoremap <C-b> :bprevious<Enter>
+nnoremap <S-k> :bnext<Enter>
+nnoremap <S-j> :bprevious<Enter>
 nnoremap <C-g> :bd<Enter>
 
 nnoremap <C-h> <Home>
