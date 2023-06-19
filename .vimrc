@@ -6,23 +6,35 @@ set number
 hi CursorColumn cterm=NONE ctermbg=240
 hi Directory ctermfg=green
 
+" Gets colorscheme to work
 if has("termguicolors")
   set termguicolors
   if &t_8f == ''
-    " The first characters after the equals sign are literal escape characters.
     set t_8f=[38;2;%lu;%lu;%lum
     set t_8b=[48;2;%lu;%lu;%lum
   endif
 endif
 
+nnoremap <C-n> :set number !<Enter>
+nnoremap <C-s> :filetype detect<Enter>
+
+nnoremap <C-t> :terminal<Enter>
+tnoremap <esc> <C-\><C-n>
+tnoremap <C-v> <C-\><C-n>
+tnoremap <S-t> <C-\><C-n>
+
+nnoremap <S-k> :bnext<Enter>
+nnoremap <S-j> :bprevious<Enter>
+nnoremap <C-g> :bd!<Enter>
+
+nnoremap <C-h> <Home>
+inoremap <C-h> <Home>
 nnoremap <C-e> <End> 
 inoremap <C-e> <End>
 
-map <C-n> :NERDTreeToggle <CR>
-map <C-j> :NERDTreeOpen<CR>
-nnoremap <C-f> :NERDTreeToggle<Enter>
+nnoremap <C-f> :Lexplore<Enter>
 
-map <C-a> :set cursorline! <CR> 
+map <C-l> :set cursorline! <Enter> 
 
 " Disabling arrow keys
 cnoremap <Down> <Nop>
