@@ -20,8 +20,10 @@ c.fonts.web.family.fixed = "terminus"
 c.fonts.web.family.sans_serif = "terminus"
 c.fonts.web.family.serif = "terminus"
 
-# dimensions
+# random
+confit.set("url.default_page", "https://searx.be")
 config.set("completion.height", "25%")
+config.set("tabs.favicons.show", "never")
 
 # colors
 config.set("colors.tabs.bar.bg", "#000000")
@@ -57,6 +59,7 @@ config.set("colors.completion.item.selected.border.top", "#f26711")
 config.set("colors.completion.item.selected.border.bottom", "#f26711")
 config.set("colors.completion.odd.bg", "#000000")
 config.set("colors.completion.fg", "#f26711")
+
 # binds
 config.bind('M', 'hint links spawn mpv {hint-url}')
 config.bind('W', 'hint links download')
