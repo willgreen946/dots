@@ -3,15 +3,26 @@ config.load_autoconfig(False)
 #config.set("colors.webpage.darkmode.enabled", True)
 
 #fonts
-c.fonts.tabs.selected = '10pt "terminus"'
-c.fonts.tabs.unselected = '10pt "terminus"'
-c.fonts.debug_console = '10pt "terminus"'
-c.fonts.prompts = '10pt "terminus"'
-c.fonts.statusbar = '10pt "terminus"'
-
 # binds
-config.bind('p', 'hint links spawn mpv {hint-url}')
-config.bind('M', 'hint links download')
+c.fonts.completion.entry = "8pt terminus"
+c.fonts.completion.category = "bold 8pt terminus"
+c.fonts.debug_console = "8pt terminus"
+c.fonts.downloads = "8pt terminus"
+c.fonts.hints = "bold 8px terminus"
+c.fonts.keyhint = "8pt terminus"
+c.fonts.messages.error = "8pt terminus"
+c.fonts.messages.info = "8pt terminus"
+c.fonts.messages.warning = "8pt terminus"
+c.fonts.prompts = "8pt terminus"
+c.fonts.statusbar = "8pt terminus"
+c.fonts.tabs.selected = "8pt terminus"
+c.fonts.tabs.unselected = "8pt terminus"
+c.fonts.web.family.fixed = "terminus"
+c.fonts.web.family.sans_serif = "terminus"
+c.fonts.web.family.serif = "terminus"
+
+config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('W', 'hint links download')
 config.bind('d', 'tab-close')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
