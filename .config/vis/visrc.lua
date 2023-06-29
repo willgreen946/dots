@@ -3,7 +3,7 @@ require('vis')
 
 vis.events.subscribe(vis.events.INIT, function()
 	-- Your global configuration options
-	vis:command('set theme avt')
+	vis:command('set theme greyscale')
 end)
 
 vis.events.subscribe(vis.events.WIN_OPEN, function(win) -- luacheck: no unused args
