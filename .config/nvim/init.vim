@@ -1,25 +1,11 @@
 set bg=dark
 syntax on
 set t_Co=256
-colorscheme avt
+colorscheme gred
 set number
 set cursorline!
 hi CursorColumn cterm=NONE ctermbg=240
 hi Directory ctermfg=green
-
-" Gets colorscheme to work
-if has("termguicolors")
-  set termguicolors
-  if &t_8f == ''
-    " The first characters after the equals sign are literal escape characters.
-    set t_8f=[38;2;%lu;%lu;%lum
-    set t_8b=[48;2;%lu;%lu;%lum
-  endif
-endif
-
-let g:airline_theme='supernova'
-
-let g:airline#extensions#tabline#enabled = 1
 
 nnoremap <C-n> :set number !<Enter>
 nnoremap <C-s> :filetype detect<Enter>
@@ -39,7 +25,6 @@ inoremap <C-e> <End>
 
 " Nerdtree
 nnoremap <C-space> :NERDTreeToggle<Enter>
-
 map <C-l> :set cursorline! <Enter> 
 
 " Disabling arrow keys
