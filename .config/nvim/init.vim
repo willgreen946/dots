@@ -1,21 +1,26 @@
 set bg=dark
 syntax on
 set t_Co=256
-colorscheme gred
+colorscheme space-vim-dark
 set number
 set cursorline!
 hi CursorColumn cterm=NONE ctermbg=240
 hi Directory ctermfg=green
 
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme = 'violet'
+let g:airline#extensions#tabline#formatter = 'unique_tail'
+
 nnoremap <C-n> :set number !<Enter>
 nnoremap <C-s> :filetype detect<Enter>
 
+autocmd TermOpen * setlocal nonumber norelativenumber
 nnoremap <C-t> :terminal<Enter>
 tnoremap <esc> <C-\><C-n>
-tnoremap <C-v> <C-\><C-n>
+tnoremap <D-c> <C-\><C-n>
 
-nnoremap <S-k> :bnext<Enter>
-nnoremap <S-j> :bprevious<Enter>
+nnoremap <C-k> :bnext<Enter>
+nnoremap <C-j> :bprevious<Enter>
 nnoremap <C-g> :bd<Enter>
 
 nnoremap <C-h> <Home>
