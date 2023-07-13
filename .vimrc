@@ -1,9 +1,9 @@
 set bg=dark
 syntax on
 set t_Co=256
-colorscheme space-vim-dark
 set number
 set cursorline!
+colorscheme space-vim-dark
 hi CursorColumn cterm=NONE ctermbg=240
 hi Directory ctermfg=green
 
@@ -11,7 +11,7 @@ nnoremap <C-l> :Lexplore<Enter>
 nnoremap <C-n> :set number !<Enter>
 nnoremap <C-s> :filetype detect<Enter>
 
-nnoremap <C-t> :terminal<Enter>
+nnoremap <C-t> :terminal ++rows=10<Enter>
 tnoremap <esc> <C-\><C-n>
 tnoremap <D-c> <C-\><C-n>
 
