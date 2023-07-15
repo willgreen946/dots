@@ -7,7 +7,7 @@ colorscheme space-vim-dark
 hi CursorColumn cterm=NONE ctermbg=240
 hi Directory ctermfg=green
 
-nnoremap <C-l> :Lexplore<Enter>
+
 nnoremap <C-n> :set number !<Enter>
 nnoremap <C-s> :filetype detect<Enter>
 
