@@ -1,5 +1,4 @@
-" Editor to neovim
-set vicmd=vim
+set vicmd=nvi
 " Colorscheme
 colorscheme avt 
 " View pane
