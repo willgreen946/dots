@@ -4,7 +4,8 @@
 
 HOMEWIFI="BT-J5A85S"
 HOMEPSK="c7G7dbLQK7APhE"
-PS1='[33m[$PWD]# [00m'
+LYNX_CFG=$HOME/.config/lynx.cfg
+PS1='[32m[$PWD]# [00m'
 PATH=$HOME/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/local/bin:/usr/local/sbin
 ENV=$HOME/.config/shrc
 export PATH HOME TERM PS1 ENV HOMEWIFI HOMEPSK
