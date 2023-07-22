@@ -1,0 +1,5 @@
+!! Colors
+*.foreground: #33ff66
+*.background: #000000
+*.cursorcolor: #33ff66
+*.ScrollBar: false

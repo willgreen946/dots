@@ -7,3 +7,11 @@ XTerm*faceSize: 8
 XTerm*ScrollBar: false
 XTerm*color2: #33ff66
 XTerm*color3: #ffff33
+
+URxvt.scrollBar: false
+URxvt.urgentOnBell: true
+URxvt.foreground: #33ff66
+URxvt.background: #000000
+URxvt.color2: #33ff66
+URxvt.color3: #ffff33
+URxvt.font: -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1
