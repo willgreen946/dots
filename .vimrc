@@ -1,15 +1,9 @@
-set bg=dark
-set t_Co=256
 syntax on
-colorscheme easy 
-hi CursorColumn ctermfg=240 ctermbg=240
 
 set shell=ksh
 set visualbell
 set lazyredraw
 set number
-set cursorline!
-set hlsearch
 
 nnoremap <C-l> :Lexplore<Enter>
 
