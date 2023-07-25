@@ -1,7 +1,7 @@
 colorscheme amber 
 set bg=dark
 set guifont=terminus
-set shell=ksh
+"set shell=ksh
 set number
 
 "hiding tool bar and taskbar
