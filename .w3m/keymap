@@ -42,8 +42,8 @@ keymap h    MOVE_LEFT
 keymap k    MOVE_UP
 keymap j    MOVE_DOWN
 keymap l    MOVE_RIGHT
-#keymap C-h  SHIFT_LEFT
-#keymap C-l  SHIFT_RIGHT
+#keymap H  SHIFT_LEFT
+#keymap L  SHIFT_RIGHT
 keymap b   PREV_WORD
 keymap n   NEXT_WORD
 
@@ -90,9 +90,6 @@ keymap C-s  ISEARCH
 
 # Regular search
 keymap /    SEARCH
-#keymap ?    SEARCH_BACK
-#keymap N    SEARCH_PREV
-#keymap n    SEARCH_NEXT
 
 # }}}
 # Tab operations {{{
@@ -100,11 +97,6 @@ keymap /    SEARCH
 keymap C-h        PREV_TAB
 keymap C-l        NEXT_TAB
 
-# Move tabs around
-#keymap C-h      TAB_LEFT
-#keymap C-l      TAB_RIGHT
-
-keymap C-w      CLOSE_TAB
 keymap d	CLOSE_TAB
 keymap C-t      NEW_TAB
 keymap C-x      TAB_MENU
